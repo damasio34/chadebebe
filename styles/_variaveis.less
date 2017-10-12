@@ -9,9 +9,12 @@
 @cor-secundaria: lighten(@cor-primaria, 20%);
 @cor-terciaria: lighten(@cor-secundaria, 20%);
 @cor-quaternaria: lighten(@cor-terciaria, 20%);
+@cor-contraste: #daa520;
+@cor-clara: #fff;
+@cor-escura: #333;
 
-@body-bg: #fff;
-@body-color: #333;
+@body-bg: @cor-clara;
+@body-color: @cor-escura;
 
 @padding-default: 30px;
 @padding-min: 10px;
@@ -23,6 +26,12 @@
 @size-desktop: 1140px;
 
 @jumbotron-bg: @cor-primaria;
+
+@menu-bg: fade(@cor-clara, 40%);
+@menu-bg-hover: fade(@cor-clara, 60%);
+@menu-color: @cor-clara;
+@menu-color-hover: @cor-primaria;
+@menu-marker: @cor-contraste;
 
 @section-padding: @padding-default;
 @perfil-bg: @cor-primaria;
