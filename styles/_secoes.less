@@ -1,0 +1,34 @@
+.secao {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  // padding: @padding-default;
+
+  &#perfil {
+    background-color: @perfil-bg;
+  }
+
+  &#historia {
+    background-color: @historia-bg;
+  }
+
+  &#doacao {
+    background-color: @doacao-bg;
+  }
+
+  &#localizacao {
+    background-color: @localizacao-bg;
+  }
+
+  &#confirmacao {
+    background-color: @confirmacao-bg;
+  }
+
+
+  & > .col {
+    flex: 0 0 auto;
+    padding: @padding-default;
+  }
+}
+
