@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Chá de Bebê</title>
-  <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-        <li><a href="#">Item 4</a></li>
-        <li><a href="#">Item 5</a></li>
-        <li><a href="#">Item 6</a></li>
-        <li><a href="#">Item 7</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="hero"></div>
-    <section id="perfil" class="secao">
-      <div class="col pai"><h2>pai</h2></div>
-      <div class="col bebe"><h2>bebe</h2></div>
-      <div class="col mae"><h2>mae</h2></div>
-    </section>
-    <section id="historia" class="secao">historia</section>
-    <section id="doacao" class="secao">doacao</section>
-    <section id="localizacao" class="secao">localizacao</section>
-    <section id="confirmacao" class="secao">confirmacao</section>
-  </main>
-  <footer>
 
-  </footer>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Chá de Bebê</title>
+	<link rel="stylesheet/less" type="text/css" href="styles/style.less" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav id="menu">
+			<ul>
+				<li>
+					<a href="#">Inicial</a>
+				</li>
+				<li>
+					<a href="#pais">Pais</a>
+				</li>
+				<li>
+					<a href="#historia">História</a>
+				</li>
+				<li>
+					<a href="#presente">Presente</a>
+				</li>
+				<li>
+					<a href="#localizacao">Localização</a>
+				</li>
+				<li>
+					<a href="#confirmacaodepresenca">Confirmação de presença</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="hero"></div>
+		<section id="perfil" class="secao">
+			<div class="col pai">
+				<h2>pai</h2>
+			</div>
+			<div class="col bebe">
+				<h2>bebe</h2>
+			</div>
+			<div class="col mae">
+				<h2>mae</h2>
+			</div>
+		</section>
+		<section id="historia" class="secao">historia</section>
+		<section id="doacao" class="secao">doacao</section>
+		<section id="localizacao" class="secao">
+			<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCaX249mpnbAiGDznTAJJqLzrnSlCigJ_U&q=Casa+De+Festas+Myrella"
+			    allowfullscreen>
+			</iframe>
+		</section>
+		<section id="confirmacao" class="secao">confirmacao</section>
+	</main>
+	<footer></footer>
 </body>
 </html>
