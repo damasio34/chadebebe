@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chá de Bebê - Lista de presentes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="#">Inicial</a>
+                </li>
+                <li>
+                    <a href="#pais">Pais</a>
+                </li>
+                <li>
+                    <a href="#historia">História</a>
+                </li>
+                <li>
+                    <a href="#presente">Lista de presentes</a>
+                </li>
+                <li>
+                    <a href="#localizacao">Localização</a>
+                </li>
+                <li>
+                    <a href="#confirmacaodepresenca">Confirmação de presença</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="presente" class="secao">
+            <div class="container">
+                <h1>Lista de presentes</h1>
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tb_presentes">
+                        </tbody>
+                    </table>
+                </div>
+                <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+                    <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                    <input type="hidden" name="currency" value="BRL" />
+                    <input type="hidden" name="receiverEmail" value="damasio34@gmail.com" />
+                    <input type="hidden" name="iot" value="button" />
+                    <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/99x61-doar-azul-assina.gif" name="submit"
+                        alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                </form>
+                <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+<script src="scripts/app.js"></script>
