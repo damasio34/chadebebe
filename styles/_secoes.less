@@ -3,9 +3,9 @@
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
-  // padding: @padding-default;
+  padding: @padding-default;
 
-  &#perfil {
+  &#pais {
     background-color: @perfil-bg;
   }
 
@@ -19,6 +19,7 @@
 
   &#localizacao {
     background-color: @localizacao-bg;
+    padding: 0;
   }
 
   &#confirmacao {
@@ -32,3 +33,15 @@
   }
 }
 
+.hero {
+  background-image: url('../img/fundo.gif');
+  background-attachment: fixed;
+  height: 50vh;
+
+  &:before {
+    content: url('../img/urso-com-borda.svg');
+    display: block;
+    padding: 100px;
+    text-align: center;
+  }
+}

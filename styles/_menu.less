@@ -1,7 +1,7 @@
 #menu {
   background-color:@menu-bg;
   left: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   ul {
@@ -19,12 +19,13 @@
       display: inline-block;
       color: @menu-color;
       text-decoration: none;
-      border-bottom:3px solid transparent;
+      border-bottom:@menu-marker-size solid transparent;
 
       &:hover {
         background-color:@menu-bg-hover;
+        border-bottom:@menu-marker-size solid @menu-marker-color;
         color: @menu-color-hover;
-        border-bottom:3px solid @menu-marker;
+        text-shadow: 0 0 15px @cor-contraste;
       }
     }
   }
