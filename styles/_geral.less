@@ -4,3 +4,38 @@ body {
   font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
+
+.destaque {
+  color: @destaque-color;
+  font-weight: bold;
+}
+.evento {
+  background-color: @evento-bg;
+  padding: @padding-min 0;
+}
+.nome-evento {
+  border-bottom: @evento-border-size solid @evento-border-color;
+  border-top: @evento-border-size solid @evento-border-color;
+  color: @evento-color;
+  padding: @padding-min 0;
+  position: relative;
+
+  &::before {
+    // border-top: 5px solid #fff;
+    border-top: @evento-border-size dotted @evento-border-color;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 100%;
+  }
+  &::after {
+    // border-top: 5px solid #fff;
+    content: '';
+    border-bottom: @evento-border-size dotted @evento-border-color;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+  }
+}

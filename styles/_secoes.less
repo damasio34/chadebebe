@@ -6,7 +6,8 @@
   padding: @padding-default;
 
   &#pais {
-    background-color: @perfil-bg;
+    background-color: @pais-bg;
+    color: @pais-color;
   }
 
   &#historia {
@@ -36,12 +37,15 @@
 .hero {
   background-image: url('../img/fundo.gif');
   background-attachment: fixed;
-  height: 50vh;
+  font-size: 32px;
+  min-height: 50vh;
+  padding: @padding-default 0;
+  text-align: center;
 
   &:before {
     content: url('../img/urso-com-borda.svg');
     display: block;
-    padding: 100px;
+    padding-top: 100px;
     text-align: center;
   }
 }
