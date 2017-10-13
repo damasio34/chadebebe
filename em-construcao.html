@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +7,52 @@
   <title>Chá do Enzo</title>
   <style>
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans');
+    * {
+      margin: 0;
+      padding: 0;
+    }
     body {
       background: url('img/fundo.gif');
-      color: #FFF;
+      color: #42619E;
       font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
-      font-size: 20px;
+      font-size: 28px;
     }
     .container {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row;
       flex-flow: row;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      min-height: 100vh;
     }
     .center {
+      background-color: #fff;
+      border-radius: 50%;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
       flex: 0 0 auto;
-      justify-content: center;
+      padding: 30px 60px;
+      text-align: center;
     }
-
+    .center::before {
+      display: block;
+      content: url('img/urso.svg'); 
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="center">
-      <img src="img/urso.png" alt="logo">
       <p>Em construção</p>
     </div>
   </div>
