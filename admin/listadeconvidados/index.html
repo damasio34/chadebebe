@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Chá de Bebê - admin</title>
+	<title>Chá de Bebê - Lista de convidados</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet/less" type="text/css" href="styles/style.less" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
 </head>
-
 <body>
 	<main>
 		<section id="ListaDePresente" class="secao">
 			<div class="container">
-				<div class="col-md-6">
-					<form id="frmCadastro" class="form-horizontal">
-						<!-- Form Name -->
-						<legend>Cadastro de itens da lista de presentes</legend>
-						<!-- Text input-->
+				<div class="col-md-12">
+					<form id="frmGuest" class="form-horizontal">						
+						<h1>Lista de convidados</h1>						
 						<div class="form-group">
-							<label class="col-md-4 control-label" for="txtnome">Nome do item</label>
+							<label class="col-md-4" for="txtAddGuest">Nome do item</label>
 							<div class="col-md-8">
-								<input id="txtnome" name="txtnome" type="text" placeholder="1 Pacote de fraldas P + Lenço umedecido" class="form-control input-md"
+								<input id="txtAddGuest" name="txtAddGuest" type="text" class="form-control input-md"
 								 required>
+								<!-- <textarea name="txtAddGuest" id="txtAddGuest" cols="30" rows="10"></textarea> -->
 							</div>
-						</div>
-						<!-- Button (Double) -->
+						</div>						
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="save"></label>
 							<div class="col-md-8">
@@ -36,24 +30,21 @@
 							</div>
 						</div>
 					</form>
-					<legend>Cadastro de itens da lista de presentes</legend>
 					<div class="table-responsive">
 						<table class="table table-hover table-striped">
 							<thead>
 								<tr>
-									<th>Nome do item</th>
-									<th>Quem tirou?</th>
+									<th></th>
+									<th>Nome</th>									
+									<th>Apagar</th>
 								</tr>
 							</thead>
-							<tbody id="tb_presentes">
+							<tbody id="tblGuests">
 							</tbody>
 						</table>
 					</div>
 				</div>
-				<div class="col-md-6"></div>
-			</div>
 		</section>
-		</div>
 	</main>
 </body>
 
@@ -61,4 +52,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
-<script src="scripts/app.js"></script>
+<script src="../../scripts/firebase_service.js"></script>
+<script src="../../scripts/guest_service.js"></script>

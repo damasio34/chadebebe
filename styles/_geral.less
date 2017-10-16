@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans');
 
 body {
-  font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
@@ -14,6 +14,7 @@ body {
   padding: @padding-min 0;
 }
 .nome-evento {
+  font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
   border-bottom: @evento-border-size solid @evento-border-color;
   border-top: @evento-border-size solid @evento-border-color;
   color: @evento-color;
@@ -38,4 +39,34 @@ body {
     bottom: -10px;
     width: 100%;
   }
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  color: @cor-clara;
+  border-top: @evento-border-size dotted @evento-border-color;
+}
+
+tr:hover{background-color:@cor-terciaria}
+
+.button {
+  color: white;
+  background: #000099 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAJklEQVQIW2P4//+/NxMDA8N/JgYGhn+oLDQu7Vk/GP4zMXDQx3IA0To1YWcEwtQAAAAASUVORK5CYII=") repeat-x;
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 3px;
+}
+
+.button:hover {
+  background: #663300 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAJklEQVQIW2P4//+/NxMDA8N/JgYGhn+oLDQu7Vk/GP4zMXDQx3IA0To1YWcEwtQAAAAASUVORK5CYII=") repeat-x;
 }
